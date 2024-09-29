@@ -16,7 +16,7 @@ button.addEventListener('click', convert)
 // Tapahtumankäsittelijä enter-näppäimen painallukselle
 input.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') { // Tarkistetaan, painettiinko enter-näppäintä
-        event.preventDefault()
+        event.preventDefault() // estetään sivun virkistys
         convert()
     }
 })
